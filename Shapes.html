@@ -1,0 +1,136 @@
+<html>
+<head><title>CSS Shapes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("#");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("#")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+<table>
+<tr>
+<td rowspan=5>
+<!--<iframe id="myFrame" src="style.css"></iframe>-->
+<!--<embed src="style.css" width="600" height="800px" style="font-size:30px">-->
+<div style="font-size:18px;font-weight:bold">Search Shapes</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for shape.." title="Type in a name">
+<object width="600" height="1800" type="text/plain" data="Text.html" border="0" style="font-size:30px" id="myUL">
+</object>
+
+</td>
+<td>
+	<table border=0 style="width:500px;font-size:18px;font-weight:bold" id="myUL">
+	<Tr style="text-align:center"><td>Square</td><td>Rectangle</td><td>Circle</tD><td>Oval Shape</tD><td>Triangle</tD></tr>
+	<Tr>
+		<td><div id ="Square"></tD>
+		<td><div id="Rectangle"></tD>
+		<td><div id="Circle"></td>
+		<td><div id="Oval"></div></td>
+		<td><div id="Triangle"style="  "></div></td>
+	</tR>
+	
+	<tr>
+	<td>Inverted Triangle</td><td>Left Triangle</tD><td>Right Triangle</tD><td>Left Right Triangle</tD><td>Right Right Triangle</tD></tr>
+	<tr>
+	<Td><div id="Inverted_Triangle" ></tD>
+	<td><div id="Left_Triangle"></div></tD>
+	<td><div id="Right_Triangle"style=" "></div></tD>
+	<td><div id="Left_Right_Triangle"></div></tD>
+	<td><div id="Right_Right_Triangle"></div></tD>
+	</tr>
+	
+	<tr><Td>Left-Top-Triangle</td><Td>Right-Top-Triangle</td><Td>Trapezoid</td><Td>Parallelogram</td><Td>Star-Six</td></tr>
+	<tr>
+	<Td><div id="Left_Top_Triangle"></div></td>
+	<Td><div id="Right_Top_Triangle"></div></td>
+	<Td><div id="Trapezoid"></div></td>
+	<Td><div id="Parallelogram" ></div></td>
+	<Td><div id="star-six"></div></td>
+	</tR>
+	
+	<tr><tD>Star</td><tD>Pentagon</td><tD>Hexagon</td><tD>Octagon</td><tD>Heart</td></tr>
+	<Tr>
+	<tD><div id="star-five"></div></td>
+	<tD><div id="Pentagon"></div></td>
+	<tD><div id="hexagon"></div></td>
+	<tD><div id="octagon"></div></td>
+	<tD><div id="Heart"></div></td>
+	</tr>
+	
+	<tr><td>Infinity</td><td>Sq-Diamond</td><td>Diamond-Shield</td><td>Narrow Diamond</td><td>Cut Diamond Shape</td></tr>
+	<tr>
+	<td><div id="Infinity"></div></td>
+	<td><div id="Diamond"></div></td>
+	<td><div id="diamond-shield"></div></td>
+	<td><div id="diamond-narrow"></div></td>
+	<td><div id="Cut-Diamond"></div></td>
+	</tr>
+	
+	
+	<tr><td>Egg</td><td>Pacman</td><td>Talk Bubble</td><td>RSS Feed</td><td>Burst-12</td></tr>
+	<tr>
+	<td><div id="egg"></div></td>
+	<td><div id="pacman"></div></td>
+	<td><div id="talkbubble"></div></td>
+	<td><div id="rss"></div></td>
+	<td><div id="burst-12"></div></td>
+	</tr>
+	
+	<tr><td>Burst-8</tD><td>Yin Yang</tD><td>Badge-Ribbon</tD><td>Space Invader</tD><td>TV</tD></tr>
+	<Tr>
+	<td><div id="burst-8"></div></td>
+	<td><div id="Yin-Yang"></div></td>
+	<td><div id="badge-ribbon"></div></td>
+	<td><div id="space-invader"></div></td>
+	<td><div id="tv"></div></td>
+	</tr>
+	
+	<Tr><td>Chevron</td><td>Magnifying Glass</td><td>Facebook</td><td>Moon</td><td>Inverted Chevron</td></tr>
+	<tr>
+	<td><div id="Chevron"></div></td>
+	<td><div id="magnifying-glass"></div></td>
+	<td><div id="facebook-icon"></div></td>
+	<td><div id="moon"></div></td>
+	<td><div id="flag"></div></td>
+	</tr>
+	
+	
+	<tr><td>Cross</td><td>Home</td><td>Pointer</td><td>Lock</td><td>Curved Corner Bottom-Left</td></tR>
+	<tr>
+	<Td><div id="cross"></div></td>
+	<Td><div id="Base"></div></td>
+	<Td><div id="pointer"></div></td>
+	<Td><div id="lock"></div></td>
+	<Td><div id="curved-corner-bottomleft"></div></td>
+	</tr>
+	
+	<tr><td>Curved Corner Bottom-Right</td><td>Curved Corner Top-Left</td><td>Curved Corner Top-Right</td><td></td><td></td></tr>
+	<tr>
+	<td><div id="curved-corner-bottomright"></div></td>
+	<td><div id="curved-corner-topleft"></div></td>
+	<td><div id="curved-corner-topright"></div></td>
+	<td><div></div></td>
+	<td><div></div></td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
